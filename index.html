@@ -3,134 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>プライバシーポリシー | レシピ帖</title>
+<title>レシピ帖 | 写真・PDF・URLからAIでレシピを自動登録</title>
+<meta name="description" content="レシピ帖は、写真・PDF・URLからAIがレシピ情報を自動抽出して登録できる、個人向けレシピ管理アプリです。">
 <style>
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
     line-height: 1.8;
     max-width: 760px;
     margin: 0 auto;
-    padding: 32px 20px 80px;
+    padding: 0 20px 80px;
     color: #2b2118;
     background: #fbf6ee;
   }
+  header {
+    text-align: center;
+    padding: 40px 0 20px;
+  }
+  header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 26px;
+    box-shadow: 0 4px 16px rgba(60, 40, 20, 0.25);
+  }
   h1 {
-    font-size: 1.6em;
-    border-bottom: 3px solid #8b5e3c;
-    padding-bottom: 12px;
+    font-size: 1.8em;
+    margin: 16px 0 4px;
+    color: #3d2b1a;
+  }
+  .tagline {
+    color: #6b5744;
+    font-size: 1.05em;
+    margin-bottom: 0;
   }
   h2 {
-    font-size: 1.15em;
-    margin-top: 2em;
+    font-size: 1.2em;
+    margin-top: 2.2em;
     color: #5c3a21;
     border-left: 6px solid #c9a063;
     padding-left: 10px;
   }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1em 0;
+  ul.features {
+    list-style: none;
+    padding: 0;
   }
-  th, td {
-    border: 1px solid #d8c4a0;
-    padding: 8px 10px;
-    text-align: left;
-    vertical-align: top;
-    font-size: 0.95em;
-  }
-  th {
+  ul.features li {
     background: #ede0d0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
   }
-  a { color: #8b5e3c; }
-  .updated { color: #6b6155; font-size: 0.9em; }
+  ul.features li b {
+    color: #5c3a21;
+  }
+  .cta {
+    text-align: center;
+    margin: 2.5em 0;
+  }
+  .cta a {
+    display: inline-block;
+    background: #5c3a21;
+    color: #fbf6ee;
+    padding: 12px 28px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  footer {
+    text-align: center;
+    color: #6b6155;
+    font-size: 0.9em;
+    margin-top: 3em;
+    border-top: 1px solid #d8c4a0;
+    padding-top: 20px;
+  }
+  footer a { color: #8b5e3c; }
 </style>
 </head>
 <body>
 
-<h1>プライバシーポリシー</h1>
-<p class="updated">制定日：2026年7月13日</p>
+<header>
+  <img src="icon.png" alt="レシピ帖 アイコン">
+  <h1>レシピ帖</h1>
+  <p class="tagline">写真・PDF・URLから、AIがレシピを自動で登録</p>
+</header>
 
+<h2>アプリについて</h2>
 <p>
-本ポリシーは、山崎智秋（以下「開発者」）が提供するアプリ「レシピ帖」（以下「本アプリ」）における、
-利用者の情報の取り扱いについて説明するものです。
+「レシピ帖」は、日々の料理レシピを手軽に整理・管理できる個人向けアプリです。
+料理の写真やレシピが載ったPDF、ウェブサイトのURLを取り込むだけで、AIが料理名・材料・分量・手順などを自動で読み取り、レシピとして登録できます。
 </p>
 
-<h2>1. 本アプリの基本方針</h2>
-<p>
-本アプリは個人のレシピ管理を目的としたアプリです。登録されたレシピ・写真・PDFなどのデータは、
-利用者の端末内にのみ保存され、開発者を含む第三者のサーバーに永続的に保存されることはありません。
-</p>
-
-<h2>2. 取得する情報とその利用目的</h2>
-<table>
-  <tr><th>情報の種類</th><th>取得のタイミング</th><th>利用目的</th></tr>
-  <tr>
-    <td>Googleアカウント情報（メールアドレス、表示名、アカウントID）</td>
-    <td>AIによるレシピ自動抽出機能を利用するためGoogleサインインを行った時</td>
-    <td>AI機能の月間利用回数をアカウント単位で管理するため</td>
-  </tr>
-  <tr>
-    <td>端末識別用のランダムID</td>
-    <td>アプリの初回起動時に自動生成</td>
-    <td>AI機能の月間利用回数を端末単位でも管理するため（不正利用防止）</td>
-  </tr>
-  <tr>
-    <td>写真・PDF・URLの内容</td>
-    <td>AIによるレシピ自動抽出を実行した時</td>
-    <td>レシピ情報を抽出するため、開発者が管理するサーバーを経由してAnthropic社のAI（Claude API）に送信されます。抽出処理後、開発者のサーバー上にこれらのデータが保存されることはありません</td>
-  </tr>
-  <tr>
-    <td>広告識別子・端末情報等</td>
-    <td>アプリ利用中（広告表示時）</td>
-    <td>Google AdMobによる広告の表示・効果測定のため</td>
-  </tr>
-  <tr>
-    <td>カメラ・写真ライブラリへのアクセス</td>
-    <td>レシピ登録のための撮影・画像選択時</td>
-    <td>レシピ写真の登録・AI抽出のため。取得した画像は端末内にのみ保存されます</td>
-  </tr>
-</table>
-
-<h2>3. 第三者サービスの利用</h2>
-<p>本アプリは、以下の第三者サービスを利用しています。各サービスにおける情報の取り扱いは、各社のプライバシーポリシーをご確認ください。</p>
-<ul>
-  <li>Google Sign-In（Googleアカウントによるサインイン） — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleプライバシーポリシー</a></li>
-  <li>Google AdMob（広告配信） — <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google広告に関するポリシー</a></li>
-  <li>Anthropic Claude API（AIによるレシピ情報の抽出） — <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropicプライバシーポリシー</a></li>
+<h2>主な機能</h2>
+<ul class="features">
+  <li><b>AIによる自動抽出</b> — 写真・スクリーンショット・PDF・URLからレシピ情報を自動登録</li>
+  <li><b>手動登録</b> — 自分でレシピを直接入力することも可能</li>
+  <li><b>検索・絞り込み</b> — ジャンルや登録日、料理名でレシピを検索</li>
+  <li><b>お気に入り・メモ</b> — よく作る料理にお気に入り登録、注意点や自由メモを追加</li>
+  <li><b>参照元へのリンク</b> — 元にしたウェブサイトをレシピ詳細からすぐに開ける</li>
 </ul>
 
-<h2>4. データの保存・削除</h2>
-<p>
-レシピデータ・写真・PDFは利用者の端末内にのみ保存されます。アプリをアンインストール、または本アプリ内でレシピを削除することで、これらのデータは削除されます。
-</p>
-<p>
-Googleアカウント情報および利用回数の記録はサーバー上で管理していますが、月ごとにリセットされます。
-アカウント情報の削除をご希望の場合は、下記の連絡先までご連絡ください。
-</p>
+<div class="cta">
+  <a href="privacy-policy/">プライバシーポリシーを見る</a>
+</div>
 
-<h2>5. 広告について</h2>
-<p>
-本アプリは、Google AdMobを通じてバナー広告およびインタースティシャル広告を表示します。
-広告配信のため、広告識別子等の情報が第三者（Google）に送信される場合があります。
-</p>
-
-<h2>6. お子様のプライバシーについて</h2>
-<p>本アプリは、13歳未満のお子様を対象としたものではなく、意図的にお子様から個人情報を収集することはありません。</p>
-
-<h2>7. セキュリティ</h2>
-<p>
-本アプリで取り扱う情報については、適切な安全管理措置を講じるよう努めますが、
-インターネットを通じた通信の性質上、安全性を完全に保証するものではありません。
-</p>
-
-<h2>8. 本ポリシーの変更</h2>
-<p>本ポリシーの内容は、法令の変更や本アプリの機能追加等に伴い、予告なく変更される場合があります。変更後の内容は本ページに掲載された時点で効力を生じるものとします。</p>
-
-<h2>9. お問い合わせ</h2>
-<p>
-本ポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。<br>
-メールアドレス：chiaki.yamazaki1216@gmail.com
-</p>
+<footer>
+  <p>お問い合わせ：<a href="mailto:chiaki.yamazaki1216@gmail.com">chiaki.yamazaki1216@gmail.com</a></p>
+  <p>&copy; 2026 レシピ帖</p>
+</footer>
 
 </body>
 </html>
