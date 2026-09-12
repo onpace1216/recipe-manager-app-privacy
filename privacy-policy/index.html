@@ -74,6 +74,16 @@
     <td>AI機能の月間利用回数をアカウント単位で管理するため</td>
   </tr>
   <tr>
+    <td>Appleアカウント情報（アカウント識別子、メールアドレス、氏名）</td>
+    <td>AIによるレシピ自動抽出機能を利用するため「Appleでサインイン」を行った時（iOS版のみ）</td>
+    <td>AI機能の月間利用回数をアカウント単位で管理するため。メールアドレスの非公開を選択された場合、Appleが発行する転送用アドレスのみを受け取ります。氏名は初回のサインイン時にのみAppleから提供され、以後は提供されません</td>
+  </tr>
+  <tr>
+    <td>サインイン状態を保持するための認証情報（セッショントークン）</td>
+    <td>「Appleでサインイン」を行った時（iOS版のみ）</td>
+    <td>アプリを再起動してもサインイン状態を維持するため。開発者のサーバーが発行し、利用者の端末内に保存されます。有効期限は30日間で、期限が切れると自動的に削除されます</td>
+  </tr>
+  <tr>
     <td>端末識別用のランダムID</td>
     <td>アプリの初回起動時に自動生成</td>
     <td>AI機能の月間利用回数を端末単位でも管理するため（不正利用防止）</td>
@@ -104,6 +114,7 @@
 <p>本アプリは、以下の第三者サービスを利用しています。各サービスにおける情報の取り扱いは、各社のプライバシーポリシーをご確認ください。</p>
 <ul>
   <li>Google Sign-In（Googleアカウントによるサインイン） — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleプライバシーポリシー</a></li>
+  <li>Sign in with Apple（Appleアカウントによるサインイン、iOS版のみ） — <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Appleプライバシーポリシー</a></li>
   <li>Google AdMob（広告配信） — <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google広告に関するポリシー</a></li>
   <li>Anthropic Claude API（AIによるレシピ情報の抽出） — <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropicプライバシーポリシー</a></li>
 </ul>
@@ -116,8 +127,8 @@ PDFはAIによるレシピ情報抽出のため解析時にサーバーへ送信
 いずれにも保存されません。
 </p>
 <p>
-月間のご利用回数は月初にリセットされます。Googleアカウント情報、利用履歴、
-およびリワード広告の視聴履歴は、アカウント情報の削除をご希望の連絡をいただくまで
+月間のご利用回数は月初にリセットされます。Googleアカウント情報またはAppleアカウント情報、
+利用履歴、およびリワード広告の視聴履歴は、アカウント情報の削除をご希望の連絡をいただくまで
 サーバー上で保持します。アカウント情報の削除をご希望の場合は、下記の連絡先までご連絡ください。
 </p>
 
